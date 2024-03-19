@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crosswind Component Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Crosswind Component</h1>
+    <h2>Calculator</h2>
+
+    <form id="windForm">
+        <div>
+            <label for="windDirection">Wind Direction (degrees):</label>
+            <input type="number" id="windDirection" required>
+        </div>
+        <div>
+            <label for="windSpeed">Wind Speed (kts):</label>
+            <input type="number" id="windSpeed" required>
+        </div>
+        <div>
+            <label for="windGusts">Wind Gusts (kts):</label>
+            <input type="number" id="windGusts">
+        </div>
+        <div>
+            <label for="runway">Runway In Use:</label>
+            <input type="number" id="runway" required>
+        </div>
+        <button type="button" onclick="calculateCrossWindComponent()">Calculate</button>
+    </form>
+    <div id="result"></div>
+    <div id="angleResult">Crosswind Angle: 0°</div> 
+    <div id="cautionTailwind" style="display:none;">🚨 Caution Tailwind 🚨</div>
+    <script src="script.js"></script>
+</body>
+</html>

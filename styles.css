@@ -1,0 +1,106 @@
+/* Reset some basic elements for a more consistent look */
+html, body, div, form, input, label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E1E1E1; /* Very light gray background */
+    color: #333; /* Darker text for better contrast on light background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: darkblue; /* Dark blue for the title */
+    margin-bottom: 5px; /* Reduced space below the title */
+    font-size: 2.5em; /* Bigger title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+}
+
+h2 {
+    color: darkblue; /* Dark blue to match the title */
+    margin-top: 0; /* Close spacing to the title */
+    font-size: 2.5em; /* Slightly smaller than the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    background-color: #222222; /* White background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0; /* Added more space between the title and input box */
+}
+
+div {
+    margin-bottom: 15px; /* Spacing between form elements */
+}
+
+label {
+    display: block; /* Ensure the label uses its own line */
+    margin-bottom: 5px; /* Spacing between label and input */
+    color: white; /* Brighter text for labels */
+}
+
+input {
+    width: 100%; /* Full width of its container */
+    padding: 10px; /* Padding for easier text entry */
+    margin-top: 5px; /* Space from the label */
+    border: 1px solid #E1E1E1; /* Subtle border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #E1E1E1; /* Slightly lighter input background */
+    color: #222222; /* Text color */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: darkblue; /* Dark blue background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Indicates the button is clickable */
+    font-weight: bold; /* Bolder font for button text */
+}
+
+button:hover {
+    background-color: #0000ff; /* Slightly brighter blue on hover */
+}
+
+#result {
+    background-color: #FFF; /* White background for the result box */
+    border: 2px solid #333; /* Slightly darker border for contrast */
+    padding: 10px;
+    margin-top: 20px; /* Ensures space between form and result */
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px; /* Consistency in design with the form */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Softer shadow for the result box */
+    font-size: 1.2em; /* Larger font size for visibility */
+    font-weight: bold; /* Bolder font for emphasis */
+}
+
+.tailwindComponent {
+    color: darkred;
+}
+
+#cautionTailwind {
+    color: darkred;
+    margin-top: 10px;
+    font-weight: bold;
+    display: none; /* Initially hidden */
+    background-color: #FFCCCC; /* Light red background */
+    border: 2px solid darkred; /* Dark red border */
+    padding: 10px;
+    border-radius: 5px; /* Optional: adds rounded corners */
+}
