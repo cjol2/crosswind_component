@@ -39,7 +39,7 @@ function calculateCrossWindComponent() {
 
     // Check if the angle is greater than 90 for tailwind component adjustments
     if (windAngle > 90) {
-        document.getElementById('result').innerHTML = `Tailwind Component: ${crossWindComponent.toFixed(2)} kts`;
+        document.getElementById('result').innerHTML = `Crosswind Component: ${crossWindComponent.toFixed(2)} kts`;
         document.getElementById('result').classList.add('tailwindComponent');
         document.getElementById('cautionTailwind').style.display = 'block';
     } else {
