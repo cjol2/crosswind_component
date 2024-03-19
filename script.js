@@ -43,7 +43,7 @@ function calculateCrossWindComponent() {
         document.getElementById('result').classList.add('tailwindComponent');
         document.getElementById('cautionTailwind').style.display = 'block';
     } else {
-        document.getElementById('result').textContent = `Cross Wind Component: ${crossWindComponent.toFixed(2)} kts`;
+        document.getElementById('result').textContent = `Crosswind Component: ${crossWindComponent.toFixed(2)} kts`;
         document.getElementById('result').classList.remove('tailwindComponent');
         document.getElementById('cautionTailwind').style.display = 'none';
     }
